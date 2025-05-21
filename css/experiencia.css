@@ -82,7 +82,7 @@
 
 @media (max-width: 800px) {
   .experiencia {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
     gap: 40px;
   }
   .experiencia .subtitulo {
@@ -100,8 +100,8 @@
     content: "Ano: ";
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .empresa {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
   }
 }
