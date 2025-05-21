@@ -20,7 +20,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/detalhe.svg') no-repeat center;
+  background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;
@@ -32,12 +32,12 @@
   color: #525252;
 }
 
-@media (max-width: 800px){
-  .introducao{
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
     gap: 40px;
   }
-  .introducao h1{
+  .introducao h1 {
     font-size: 2rem;
   }
   .introducao h1::before {
@@ -47,11 +47,18 @@
   }
 }
 
-@media(max-width: 400px){
+@media (max-width: 480px) {
   .introducao {
     grid-template-columns: 1fr;
+    padding: 0px;
   }
-  .introducao img{
+  .introducao img {
     display: none;
+  }
+  .introducao h1{
+    margin-left: 10px;
+  }
+  .introducao p {
+    margin-left: 10px;
   }
 }
