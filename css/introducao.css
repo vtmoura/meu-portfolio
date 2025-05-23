@@ -1,11 +1,20 @@
 .introducao {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 0px;
   margin: 0 auto;
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+}
+.perfil {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  padding: 0px 20px;
+}
+.perfil .localizado{
+  display: none;
 }
 
 .introducao h1 {
@@ -45,6 +54,10 @@
     height: 10px;
     left: 0px;
   }
+  .introducao img {
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -60,5 +73,10 @@
   }
   .introducao p {
     margin-left: 10px;
+    font-size: 1.3rem;
+  }
+  .perfil .localizado {
+    grid-column: 1;
+    margin-top: 0px;
   }
 }

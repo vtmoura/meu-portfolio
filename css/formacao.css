@@ -1,17 +1,18 @@
-.formacao {
+.formacao{
   background: #141414;
-  color: #ffff;
+  color:#fff;
 }
 
 .formacao-container {
   max-width: 1200px;
-  padding: 120px 20px;
+  padding: 120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   position: relative;
 }
+
 
 .formacao-container::after {
   content: "";
@@ -26,7 +27,7 @@
 
 .formacao .subtitulo {
   color: #ffffff70;
-  max-width: 5ch;
+  max-width: ch;
 }
 
 .formacao-texto {
@@ -42,7 +43,7 @@
 }
 
 .faculdade-lista {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 60px;
