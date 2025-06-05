@@ -35,9 +35,22 @@
   font-size: 1.125rem;
   color: #8f8f8f;
 }
-
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .footer-container {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
+  }
+  .formacao .subtitulo {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contato li {
+    font-size: 1.5rem;
+    line-height: 10%;
   }
 }
