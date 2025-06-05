@@ -1,6 +1,7 @@
 .experiencia {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
@@ -9,7 +10,7 @@
 .experiencia .subtitulo {
   color: #e0e0e0;
   margin-left: 20px;
-  margin-top: 173px
+  /* transform: rotate(-0.25turn) */
 }
 
 .experiencia-texto {
@@ -82,12 +83,19 @@
 }
 
 @media (max-width: 800px) {
+  .empresa-titulo {
+    font-size: 2rem;
+  }
+  .empresa-texto {
+    font-size: 1.5rem;
+  }
   .experiencia {
     grid-template-columns: none;
     gap: 40px;
   }
   .experiencia .subtitulo {
-    color: #141414;
+    color: #000000;
+    text-align: center;
   }
   .experiencia-texto {
     font-size: 1.25rem;
@@ -101,14 +109,24 @@
     content: "Ano: ";
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .empresa {
     grid-template-columns: none;
   }
   .experiencia .subtitulo {
     margin: 0px;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
   }
   .experiencia {
    padding: 10px 20px;
+  }
+
+  .empresa-titulo {
+    font-size: 1.75rem;
+  }
+  .empresa-texto {
+    font-size: 1.5rem;
   }
 }
